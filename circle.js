@@ -13,7 +13,7 @@ class Circle {
         this.x = Math.random()*(canvasBC.width-(this.radius+maxradius)) + this.radius;
         this.y = Math.random()*(canvasBC.height-(this.radius+maxradius)) + this.radius;
         this.dx = (Math.random()*10+2)*((-1)**Math.floor(Math.random()*2+1));
-        this.dy = (Math.random()*100+2)*((-1)**Math.floor(Math.random()*2+1));
+        this.dy =Math.random()*500+2;
     }
     Intersects(other) {
         //console.log(this.x, "this")
@@ -37,7 +37,7 @@ class Circle {
         if(this.x < this.radius || this.x > ctx.canvas.width-this.radius) {
             this.dx *=-1;
         }
-        
+
         if (Math.abs(this.dx) < 0.05) {
             this.dx = 0
         }

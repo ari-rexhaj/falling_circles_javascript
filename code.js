@@ -2,7 +2,7 @@ let canvasBC = document.getElementById("canvasBC");
 let ctx = canvasBC.getContext("2d");
 let circles = [];
 
-for(let i = 0; i < 50; i++) {
+for(let i = 0; i < 75; i++) {
     let circle = new Circle();
     circles.push(circle);
 };
